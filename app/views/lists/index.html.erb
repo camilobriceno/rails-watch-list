@@ -1,2 +1,6 @@
-<%= @lists %>
-<p>Test</p>
+<h1 class="mt-3">Movie categories</h1>
+<div class="grid">
+  <% @lists.each do |list| %>
+    <%= render "listmovie", list: list %>
+  <% end %>
+</div>
