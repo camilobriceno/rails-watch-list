@@ -1,0 +1,7 @@
+<h1 class="mt-3">All movies</h1>
+<%= link_to 'Add Movie', new_movie_path %>
+<div class="grid">
+<% @movies.each do |movie| %>
+<%= render "allmovies", movie: movie %>
+<% end %>
+</div>

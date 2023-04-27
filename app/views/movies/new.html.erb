@@ -1,0 +1,7 @@
+<%= simple_form_for(@movie) do |m| %>
+  <%= m.input :title, placeholder: 'Enter title of movie'%>
+  <%= m.input :overview, placeholder: 'Make a description' %>
+  <%= m.input :poster_url%>
+  <%= m.input :rating %>
+  <%= m.submit %>
+<% end %>
